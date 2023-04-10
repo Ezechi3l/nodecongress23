@@ -121,7 +121,24 @@
         '/.cache':
             source: local
             source_path: cache
-        '.tmp':
+        '/.tmp':
             source: local
             source_path: tmp
+    ```
+
+1. Commit, push, and open a PR for the changes:
+
+    ```
+    git add .
+    git commit -m "Platformify"
+    git push origin platformify
+    ```
+
+1. When the PR check has finished, visit the `pr-1` environment, which has failed with a 502. 
+    Since we're building for production, we need to migrate our local data. 
+
+    ```
+    platform mount:upload --mount public/uploads --source api/public/uploads
+    platform mount:upload --mount .tmp --source api/.tmp
+    platform redeploy -e pr-1
     ```

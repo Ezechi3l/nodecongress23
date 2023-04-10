@@ -25,6 +25,6 @@
         '/.cache':
             source: local
             source_path: cache
-        '.tmp':
+        '/.tmp':
             source: local
             source_path: tmp
