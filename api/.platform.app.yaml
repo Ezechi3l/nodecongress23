@@ -50,9 +50,9 @@ mounts:
     'public/uploads':
         source: local
         source_path: uploads
-    '/.cache':
-        source: local
-        source_path: cache
+    # '/.cache':
+    #     source: local
+    #     source_path: cache
     '/.tmp':
         source: local
         source_path: tmp
