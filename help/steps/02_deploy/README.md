@@ -126,6 +126,20 @@
             source_path: tmp
     ```
 
+1. Configure the required environment variables in a file called `api/.environment`:
+
+    ```bash
+    # Keys
+    export APP_KEYS=GzJwXgkYcTpND5tSohWCkA==,q5AiYmxZtYy60wrcjaJulg==,cSL0JHf+o62DqHHsrjEemA==,fYZuJ0TIMTXPWwEu02Vnkg==
+    export API_TOKEN_SALT=$PLATFORM_PROJECT_ENTROPY
+    export ADMIN_JWT_SECRET=$PLATFORM_PROJECT_ENTROPY
+    export JWT_SECRET=$PLATFORM_TREE_ID
+
+    # Database
+    export DATABASE_CLIENT=sqlite
+    export DATABASE_FILENAME=.tmp/data.db
+    ```
+
 1. Commit, push, and open a PR for the changes:
 
     ```
