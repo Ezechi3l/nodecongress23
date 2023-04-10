@@ -1,26 +1,30 @@
 name: strapi
-
+ 
 type: 'nodejs:18'
-
+ 
 build:
     flavor: none
+
+dependencies:
+    nodejs: 
+        yarn: "*"
 variables:
     env:
         NODE_ENV: production
 hooks:
     build: |
-        corepack yarn --frozen-lockfile
-        corepack yarn build
+        yarn --frozen-lockfile
+        yarn build
         rsync -av -R .cache/* stage
-
+ 
     deploy: |
         rsync -av stage/.cache/* .cache
-
+ 
 web:
     commands:
         start: |
             printf "\n\n\nSANITY CHECK\n\n\n"
-            corepack yarn start
+            yarn start
 
     # locations:
     #     '/':
