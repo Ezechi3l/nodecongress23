@@ -13,10 +13,23 @@ hooks:
         corepack yarn build
 
 web:
-    commands:
-        start: |
-            printf "\n\n\nSANITY CHECK\n\n\n"
-            corepack yarn start
+    # commands:
+    #     start: |
+    #         printf "\n\n\nSANITY CHECK\n\n\n"
+    #         corepack yarn start
+
+    locations:
+        '/':
+            # Handle dynamic requests
+            root: 'build'
+            index: 'index.html'
+            # passthru: '/index.php'
+            # Disallow static files
+            allow: false
+            rules:
+                # Allow common image files only.
+                '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
+                    allow: true
 
 disk: 1024
 
