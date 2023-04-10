@@ -1,0 +1,30 @@
+    name: strapi
+
+    type: 'nodejs:18'
+
+    build:
+        flavor: none
+    variables:
+        env:
+            NODE_ENV: production
+    hooks:
+        build: |
+            corepack yarn --frozen-lockfile
+            corepack yarn build
+
+    web:
+        commands:
+            start: corepack yarn start
+
+    disk: 1024
+
+    mounts:
+        'public/uploads':
+            source: local
+            source_path: uploads
+        '/.cache':
+            source: local
+            source_path: cache
+        '.tmp':
+            source: local
+            source_path: tmp
