@@ -22,7 +22,8 @@ web:
         '/':
             # Handle dynamic requests
             root: 'build'
-            index: 'index.html'
+            index: 
+                - 'index.html'
             # passthru: '/index.php'
             # Disallow static files
             allow: false
