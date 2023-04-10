@@ -11,6 +11,10 @@ hooks:
     build: |
         corepack yarn --frozen-lockfile
         corepack yarn build
+        rsync -av -R .cache/* stage
+
+    deploy: |
+        rsync -av stage/.cache/* .cache
 
 web:
     commands:
