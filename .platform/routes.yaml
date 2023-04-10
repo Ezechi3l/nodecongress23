@@ -1,7 +1,7 @@
-"https://www.api.{default}/":
+"https://www.{default}/":
     type: redirect
-    to: "https://api.{default}/"
-"https://api.{default}/":
+    to: "https://{default}/"
+"https://{default}/":
     type: upstream
     upstream: "strapi:http"
     id: "api"
