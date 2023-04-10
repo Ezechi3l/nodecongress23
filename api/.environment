@@ -18,13 +18,13 @@ export DATABASE_FILENAME=.tmp/data.db
 # export DATABASE_POOL_MAX=10
 
 # Email
-export SMTP_HOST=$PLATFORM_SMTP_HOST
-export SMTP_PORT=25
+# export SMTP_HOST=$PLATFORM_SMTP_HOST
+# export SMTP_PORT=25
 
-ENVIRONMENT=$(echo $PLATFORM_ROUTES | base64 --decode | jq -r 'to_entries[] | select(.value.primary == true) | .key')
-ENVIRONMENT=${ENVIRONMENT%/}
-LENGTH=${#ENVIRONMENT}
-SHORT_URL=${ENVIRONMENT:12:LENGTH}
+# ENVIRONMENT=$(echo $PLATFORM_ROUTES | base64 --decode | jq -r 'to_entries[] | select(.value.primary == true) | .key')
+# ENVIRONMENT=${ENVIRONMENT%/}
+# LENGTH=${#ENVIRONMENT}
+# SHORT_URL=${ENVIRONMENT:12:LENGTH}
 
-export EMAIL_DEFAULT_FROM="hello@$SHORT_URL"
-export EMAIL_DEFAULT_REPLY_TO="hello@$SHORT_URL"
+# export EMAIL_DEFAULT_FROM="hello@$SHORT_URL"
+# export EMAIL_DEFAULT_REPLY_TO="hello@$SHORT_URL"

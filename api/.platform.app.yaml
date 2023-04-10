@@ -24,7 +24,7 @@ web:
     commands:
         start: |
             printf "\n\n\nSANITY CHECK\n\n\n"
-            yarn start
+            .global/bin/yarn start
 
     # locations:
     #     '/':
