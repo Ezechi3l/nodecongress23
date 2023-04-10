@@ -110,7 +110,9 @@
 
     web:
         commands:
-            start: corepack yarn start
+            start: |
+                printf "\n\n\nSANITY CHECK\n\n\n"
+                corepack yarn start
 
     disk: 1024
 
