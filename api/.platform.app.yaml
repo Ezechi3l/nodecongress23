@@ -5,6 +5,30 @@ type: 'nodejs:18'
 build:
     flavor: none
 
+##################################################
+# WITH COREPACK
+##################################################
+# variables:
+#     env:
+#         NODE_ENV: production
+# hooks:
+#     build: |
+#         corepack yarn --frozen-lockfile
+#         corepack yarn build
+#         rsync -av -R .cache/* stage
+ 
+#     deploy: |
+#         rsync -av stage/.cache/* .cache
+ 
+# web:
+#     commands:
+#         start: |
+#             printf "\n\n\nSANITY CHECK\n\n\n"
+#             .global/bin/yarn start
+
+##################################################
+# NO COREPACK
+##################################################
 dependencies:
     nodejs: 
         yarn: "*"
@@ -15,29 +39,10 @@ hooks:
     build: |
         yarn --frozen-lockfile
         yarn build
-        rsync -av -R .cache/* stage
- 
-    deploy: |
-        rsync -av stage/.cache/* .cache
  
 web:
     commands:
-        start: |
-            printf "\n\n\nSANITY CHECK\n\n\n"
-            .global/bin/yarn start
-
-    # locations:
-    #     '/':
-    #         # Handle dynamic requests
-    #         root: 'build'
-    #         index: 
-    #             - 'index.html'
-    #         # Disallow static files
-    #         allow: false
-    #         rules:
-    #             # Allow common image files only.
-    #             '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
-    #                 allow: true
+        start: .global/bin/yarn start
 
 disk: 1024
 
