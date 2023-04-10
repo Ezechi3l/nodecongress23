@@ -1,0 +1,100 @@
+[2023-04-10 16:48:34.214] [34mdebug[39m: ⛔️ Server wasn't able to start properly.
+[2023-04-10 16:48:34.216] [31merror[39m: unable to open database file
+SqliteError: unable to open database file
+    at new Database (/app/node_modules/better-sqlite3/lib/database.js:63:26)
+    at Client_BetterSQLite3.acquireRawConnection (/app/node_modules/knex/lib/dialects/better-sqlite3/index.js:12:12)
+    at create (/app/node_modules/knex/lib/client.js:254:39)
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.19
+$ strapi start
+This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason:
+SqliteError: unable to open database file
+    at new Database (/app/node_modules/better-sqlite3/lib/database.js:63:26)
+    at Client_BetterSQLite3.acquireRawConnection (/app/node_modules/knex/lib/dialects/better-sqlite3/index.js:12:12)
+    at create (/app/node_modules/knex/lib/client.js:254:39)
+[2023-04-10 16:48:39.992] [34mdebug[39m: ⛔️ Server wasn't able to start properly.
+[2023-04-10 16:48:39.995] [31merror[39m: unable to open database file
+SqliteError: unable to open database file
+    at new Database (/app/node_modules/better-sqlite3/lib/database.js:63:26)
+    at Client_BetterSQLite3.acquireRawConnection (/app/node_modules/knex/lib/dialects/better-sqlite3/index.js:12:12)
+    at create (/app/node_modules/knex/lib/client.js:254:39)
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.19
+$ strapi start
+This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason:
+SqliteError: unable to open database file
+    at new Database (/app/node_modules/better-sqlite3/lib/database.js:63:26)
+    at Client_BetterSQLite3.acquireRawConnection (/app/node_modules/knex/lib/dialects/better-sqlite3/index.js:12:12)
+    at create (/app/node_modules/knex/lib/client.js:254:39)
+[2023-04-10 16:48:45.793] [34mdebug[39m: ⛔️ Server wasn't able to start properly.
+[2023-04-10 16:48:45.797] [31merror[39m: unable to open database file
+SqliteError: unable to open database file
+    at new Database (/app/node_modules/better-sqlite3/lib/database.js:63:26)
+    at Client_BetterSQLite3.acquireRawConnection (/app/node_modules/knex/lib/dialects/better-sqlite3/index.js:12:12)
+    at create (/app/node_modules/knex/lib/client.js:254:39)
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.19
+$ strapi start
+This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason:
+SqliteError: unable to open database file
+    at new Database (/app/node_modules/better-sqlite3/lib/database.js:63:26)
+    at Client_BetterSQLite3.acquireRawConnection (/app/node_modules/knex/lib/dialects/better-sqlite3/index.js:12:12)
+    at create (/app/node_modules/knex/lib/client.js:254:39)
+[2023-04-10 16:48:51.573] [34mdebug[39m: ⛔️ Server wasn't able to start properly.
+[2023-04-10 16:48:51.575] [31merror[39m: unable to open database file
+SqliteError: unable to open database file
+    at new Database (/app/node_modules/better-sqlite3/lib/database.js:63:26)
+    at Client_BetterSQLite3.acquireRawConnection (/app/node_modules/knex/lib/dialects/better-sqlite3/index.js:12:12)
+    at create (/app/node_modules/knex/lib/client.js:254:39)
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.19
+$ strapi start
+This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason:
+SqliteError: unable to open database file
+    at new Database (/app/node_modules/better-sqlite3/lib/database.js:63:26)
+    at Client_BetterSQLite3.acquireRawConnection (/app/node_modules/knex/lib/dialects/better-sqlite3/index.js:12:12)
+    at create (/app/node_modules/knex/lib/client.js:254:39)
+[2023-04-10 16:48:57.572] [34mdebug[39m: ⛔️ Server wasn't able to start properly.
+[2023-04-10 16:48:57.575] [31merror[39m: unable to open database file
+SqliteError: unable to open database file
+    at new Database (/app/node_modules/better-sqlite3/lib/database.js:63:26)
+    at Client_BetterSQLite3.acquireRawConnection (/app/node_modules/knex/lib/dialects/better-sqlite3/index.js:12:12)
+    at create (/app/node_modules/knex/lib/client.js:254:39)
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.19
+$ strapi start
+This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason:
+SqliteError: unable to open database file
+    at new Database (/app/node_modules/better-sqlite3/lib/database.js:63:26)
+    at Client_BetterSQLite3.acquireRawConnection (/app/node_modules/knex/lib/dialects/better-sqlite3/index.js:12:12)
+    at create (/app/node_modules/knex/lib/client.js:254:39)
+[2023-04-10 16:49:03.553] [34mdebug[39m: ⛔️ Server wasn't able to start properly.
+[2023-04-10 16:49:03.556] [31merror[39m: unable to open database file
+SqliteError: unable to open database file
+    at new Database (/app/node_modules/better-sqlite3/lib/database.js:63:26)
+    at Client_BetterSQLite3.acquireRawConnection (/app/node_modules/knex/lib/dialects/better-sqlite3/index.js:12:12)
+    at create (/app/node_modules/knex/lib/client.js:254:39)
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.19
+$ strapi start
+This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason:
+SqliteError: unable to open database file
+    at new Database (/app/node_modules/better-sqlite3/lib/database.js:63:26)
+    at Client_BetterSQLite3.acquireRawConnection (/app/node_modules/knex/lib/dialects/better-sqlite3/index.js:12:12)
+    at create (/app/node_modules/knex/lib/client.js:254:39)
+[2023-04-10 16:49:09.580] [34mdebug[39m: ⛔️ Server wasn't able to start properly.
+[2023-04-10 16:49:09.583] [31merror[39m: unable to open database file
+SqliteError: unable to open database file
+    at new Database (/app/node_modules/better-sqlite3/lib/database.js:63:26)
+    at Client_BetterSQLite3.acquireRawConnection (/app/node_modules/knex/lib/dialects/better-sqlite3/index.js:12:12)
+    at create (/app/node_modules/knex/lib/client.js:254:39)
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.19
+$ strapi start

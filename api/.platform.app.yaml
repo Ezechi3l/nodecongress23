@@ -1,6 +1,6 @@
 name: strapi
 
-type: 'nodejs:18'
+type: 'nodejs:16'
 
 build:
     flavor: none
