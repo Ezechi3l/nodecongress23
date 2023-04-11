@@ -1,3 +1,4 @@
+# The backend Strapi api.
 "https://www.api.{default}/":
     type: redirect
     to: "https://api.{default}/"

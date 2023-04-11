@@ -34,6 +34,10 @@ mounts:
         source: local
         source_path: tmp
 
+relationships:
+  database: "dbmysql:mysql"
+
+
 
 ##################################################
 # WITH COREPACK
