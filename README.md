@@ -17,14 +17,8 @@ In this workshop, you'll have a chance to explore a different, single vendor app
 1. A tour of Strapi: generating a backend API
 2. Deploying the backend on Platform.sh
 3. Deploying the frontend on Platform.sh
+
+If there's time:
+
 4. Switching to production services
 5. Adding email
-
-Structure:
-
-Getting started
-Overview of Strapi
-Overview of Platform.sh workflow
-Deploying the project
-Switching services
-Adding the frontend
