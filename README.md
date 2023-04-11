@@ -1,5 +1,9 @@
 # Decoupling in Practice
 
+> **Note:**
+>
+> Non-Platform.sh code in this workshop comes from https://github.com/strapi/foodadvisor (MIT License 2019 Strapi Solutions)
+
 ## About
 
 Deploying decoupled and microservice applications isn't just a problem to be solved on migration day. Moving forward with these architectures depends completely on what your team's workflow experience will look like day-to-day post-migration.
@@ -12,6 +16,9 @@ In this workshop, you'll have a chance to explore a different, single vendor app
 
 1. A tour of Strapi: generating a backend API
 2. Deploying the backend on Platform.sh
+3. Deploying the frontend on Platform.sh
+4. Switching to production services
+5. Adding email
 
 Structure:
 
