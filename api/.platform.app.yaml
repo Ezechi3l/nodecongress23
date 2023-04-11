@@ -1,3 +1,7 @@
+##################################################
+# WITHOUT COREPACK
+##################################################
+
 name: strapi
  
 type: 'nodejs:18'
@@ -5,30 +9,6 @@ type: 'nodejs:18'
 build:
     flavor: none
 
-##################################################
-# WITH COREPACK
-##################################################
-# variables:
-#     env:
-#         NODE_ENV: production
-# hooks:
-#     build: |
-#         corepack yarn --frozen-lockfile
-#         corepack yarn build
-#         rsync -av -R .cache/* stage
- 
-#     deploy: |
-#         rsync -av stage/.cache/* .cache
- 
-# web:
-#     commands:
-#         start: |
-#             printf "\n\n\nSANITY CHECK\n\n\n"
-#             .global/bin/yarn start
-
-##################################################
-# NO COREPACK
-##################################################
 dependencies:
     nodejs: 
         yarn: "*"
@@ -56,3 +36,32 @@ mounts:
     '/.tmp':
         source: local
         source_path: tmp
+
+
+##################################################
+# WITH COREPACK
+##################################################
+# name: strapi
+ 
+# type: 'nodejs:18'
+ 
+# build:
+#     flavor: none
+# variables:
+#     env:
+#         NODE_ENV: production
+# hooks:
+#     build: |
+#         corepack yarn --frozen-lockfile
+#         corepack yarn build
+#         rsync -av -R .cache/* stage
+ 
+#     deploy: |
+#         rsync -av stage/.cache/* .cache
+ 
+# web:
+#     commands:
+#         start: |
+#             printf "\n\n\nSANITY CHECK\n\n\n"
+#             /usr/bin/corepack yarn start
+

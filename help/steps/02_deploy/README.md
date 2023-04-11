@@ -95,24 +95,26 @@
 
     ```yaml
     name: strapi
-
+    
     type: 'nodejs:18'
-
+    
     build:
         flavor: none
+
+    dependencies:
+        nodejs: 
+            yarn: "*"
     variables:
         env:
             NODE_ENV: production
     hooks:
         build: |
-            corepack yarn --frozen-lockfile
-            corepack yarn build
-
+            yarn --frozen-lockfile
+            yarn build
+    
     web:
         commands:
-            start: |
-                printf "\n\n\nSANITY CHECK\n\n\n"
-                corepack yarn start
+            start: .global/bin/yarn start
 
     disk: 1024
 
@@ -120,9 +122,6 @@
         'public/uploads':
             source: local
             source_path: uploads
-        '/.cache':
-            source: local
-            source_path: cache
         '/.tmp':
             source: local
             source_path: tmp
@@ -136,6 +135,7 @@
     export API_TOKEN_SALT=$PLATFORM_PROJECT_ENTROPY
     export ADMIN_JWT_SECRET=$PLATFORM_PROJECT_ENTROPY
     export JWT_SECRET=$PLATFORM_TREE_ID
+    export TRANSFER_TOKEN_SALT=$PLATFORM_PROJECT_ENTROPY:q
 
     # Database
     export DATABASE_CLIENT=sqlite
