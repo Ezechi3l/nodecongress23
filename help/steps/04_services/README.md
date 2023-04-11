@@ -42,14 +42,13 @@
 
     ```
     cd api
-    yarn add mysql
+    yarn add mysql pg
     ```
 
 1. `git add .`
 1. `git commit -m "Add MySQL service."`
 1. Verify the (failed deployment)
-1. `cd docs`
-1. `platform sql < foodadvisor.sql`
+1. `platform sql -A strapi < help/steps/04_services/foodadvisor.sql`
 1. Verify the environment
 1. `platform merge updates`
 1. `platform sql -e main < foodadvisor.sql`

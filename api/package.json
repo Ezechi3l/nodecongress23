@@ -16,6 +16,7 @@
     "@strapi/strapi": "4.9.0",
     "better-sqlite3": "8.0.1",
     "mysql": "^2.18.1",
+    "pg": "^8.10.0",
     "unzip-stream": "^0.3.1",
     "uuid-v4": "^0.1.0"
   },

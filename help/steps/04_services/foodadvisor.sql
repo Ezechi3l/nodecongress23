@@ -2611,7 +2611,7 @@ CREATE TABLE `restaurants` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
   `slug` varchar(255) DEFAULT NULL,
-  `price` enum('_1','_2','_3','_4') DEFAULT NULL,
+  `price` enum('p1','p2','p3','p4') DEFAULT NULL,
   `publish_at` datetime(6) DEFAULT NULL,
   `ready` tinyint(1) DEFAULT NULL,
   `comment` longtext,
