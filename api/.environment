@@ -6,9 +6,7 @@ export JWT_SECRET=$PLATFORM_TREE_ID
 export TRANSFER_TOKEN_SALT=$PLATFORM_PROJECT_ENTROPY
 
 # Database
-export DATABASE_CLIENT=sqlite
-export DATABASE_FILENAME=.tmp/data.db
-export DATABASE_CLIENT=postgres
+export DATABASE_CLIENT=mysql
 export DATABASE_NAME=$(echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r ".database[0].path")
 export DATABASE_HOST=$(echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r ".database[0].host")
 export DATABASE_PORT=$(echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r ".database[0].port")
